@@ -1,5 +1,5 @@
-## This functions create an object able to store matrix and calculate the inverse which is cached. As both values are stored on a list then 
-## when the inverse is required 
+## This functions create an object able to store a matrix calculate the inverse and store its value (cached) on a list. When the 
+## inverse is required and the matrix has not been changed the cache value is returned saving resorces of the   
 
 ## This function has a list where we store a given matrix through the set instruction and get()
 ## retreives. This function is  and the matrix inverse values. 
