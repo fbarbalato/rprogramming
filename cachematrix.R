@@ -1,16 +1,14 @@
-## This functions create an object able to store a matrix, calculate its inverse and store the results (cached) on a list. When the 
-## inverse has already been calculated and the matrix not been changed the cache value is returned saving computational resorces 
-## In order to avoid errors we assume the matrices are invertibles
+## This functions create an object able to store a matrix, calculate its inverse and store the results (cached) on a list. When 
+## the inverse has already been calculated and the matrix not been changed the cache value is returned saving computational  
+## resorces. In order to avoid errors we assume all matrices inserted are invertibles
 
-## This function stores on a list a given matrix (through the set instruction) and the inverse value computed through the cacheSolv
-## with the setinverse instruction . get() retrieves the matrix and getinverse() the inverse matrix.
-
+## This function associated to an object stores on a list a given matrix (through the set instruction) and the inverse matrix computed through the 
+## cacheSolve function with the setinverse instruction. get() retrieves the matrix and getinverse() the inverse matrix.
 makeCacheMatrix <- function(x = matrix()) {
 
       m <- NULL			#  m is initialized to the value = NULL (empty)
         set <- function(y) {
-                x <<- y		#  The value of y is stored in x into 
-					#the main function makeCacheMatix  
+                x <<- y		#  The value of y is stored in x into the main function makeCacheMatix  
                 m <<- NULL	#  when a new matrix is entered m is restored
 				#  to NULL in the main function as the old value
 				#  is not needed anymore
